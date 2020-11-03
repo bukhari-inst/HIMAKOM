@@ -1,0 +1,200 @@
+/* 20. Margin dan Padding */
+body{
+  margin: 0;
+}
+
+/* 24. Local Fonts, buka Google Font */
+@font-face{
+  font-family: abrilFat;
+  src: url('../font/Abril_Fatface/AbrilFatface-Regular.ttf');
+}
+
+.header{
+  /* 19. Width dan Height */
+  /* agar isi konten penuh menggunakan % */
+  /* 20. Margin dan Padding */
+  width: 100%;
+  overflow: hidden;
+  /* background: #b1b1b1; */
+  /* padding: 50px;
+  margin-bottom: 50px; */
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dbdbdb;
+  /* margin-bottom: 20px; */
+}
+
+.btn-primary {
+  background: #4950F6;
+  border: 0px;
+  padding: 15px 40px 15px 40px !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Gelasio;
+  /* 26. Border Radius */
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background: hsl(238, 54%, 47%);
+  border: 0px;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #bcd0e5;
+  padding: 15px 40px 15px 40px !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  color: #173A56;
+  font-family: Gelasio;
+  /* 26. Border Radius */
+  border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  background: none;
+  border: 1px solid #808d9b;
+  color: #173A56;
+  font-family: Gelasio;
+}
+
+/* 27. Gradient Background */
+/* 28. Background Image */
+.hero{
+  margin-top: 40px;
+  height: 700px;
+  /* bisa menggnakan RGB dan kode hex */
+  /* background: linear-gradient(white, red); */
+  /* background: radial-gradient(white, red); */
+  /* background: linear-gradient(to left, white, red); */
+  background-image: url('../images/hero-1.jpg');
+  background-size: cover;
+}
+
+/* 21. Float, dan membuat class container */
+.container {
+  width: 90%;
+  /* agar tinggi sesuai dg isi konten, mka memakai overflow: hidden; */
+  overflow: hidden;
+  margin: auto;
+}
+
+.container-sm {
+  width: 40%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.header .container .logo{
+  height: 62px;
+  margin-top: 25px;
+  /* 21. Float */
+  float: left;
+}
+
+ /* 21. Float, dan membuat class container */
+ /* 22. CSS Navigation */
+.header .container .navigation{
+  float: right;
+  /* merata tengahkan */
+  margin-top: 35px;
+}
+
+.header .container .navigation .navbar{
+  margin-top: 10px;
+}
+
+/* 22. CSS Navigation */
+.header .container .navigation li{
+  float: right;
+  margin-left: 25px;
+  font-size: 22px;
+  /* untuk mnghilangkan titik" */
+  display: block;
+}
+
+/* 22. CSS Navigation, merubah warna hruf tag a */
+.header .container .navigation li a{
+  color: #4a4a4a;
+  text-decoration: none;
+  /* 24. Local Fonts, buka Google Font */
+  /* 25. Fonts Google Url */
+  /* font-family: abrilFat; */
+  font-family: Gelasio;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1, h2, p{
+  font-family: Gelasio;
+  color: black;
+}
+
+/* 23. Pseudo-Classes, Hover */
+/* 24. Local Fonts, buka Google Font */
+.header .container .navigation li a:hover{
+  color: #002fff;
+  text-decoration: underline;
+}
+
+/* untuk membuat link yg telah dikunjungi berwarna */
+/* .header .container .navigation li a:visited{
+  color: red;
+} */
+
+.container .container-sm{
+  margin-top: 50px;
+}
+
+.container .container-sm h1{
+  text-align: center; 
+  font-size: 50px
+}
+
+.parent .container{
+  margin-top: 50px;
+}
+
+.container .content-sm{
+  background: none;
+  float: left;
+  margin-right: 11.7px;
+  margin-left: 11.7px;
+}
+
+.newsletter{
+  margin-top: 100px;
+  height: 400px;
+  background: #11103e;
+  border-bottom: 0.1px solid #808080;
+}
+
+.site-footer{
+  height: 180px;
+  background: #11103e;
+}
+
+.site-footer .container p{
+  float: left;
+  color: white;
+  font-size: 18px;
+}
+
+.site-footer .container .footer-link li{
+  float: right;
+  margin-left: 25px;
+  font-size: 20px;
+  /* untuk mnghilangkan titik" */
+  display: block;
+}
+
+.site-footer .container .footer-link li a{
+  color: white;
+  text-decoration: none;
+  font-family: Gelasio;
+}
+
+.site-footer .container .footer-link li a:hover{
+  color: #5c7aff;
+  text-decoration: underline;
+}
