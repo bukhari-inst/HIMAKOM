@@ -130,6 +130,10 @@ h1, h2, p{
   color: black;
 }
 
+img{
+  border-radius: 20px;
+}
+
 /* 23. Pseudo-Classes, Hover */
 /* 24. Local Fonts, buka Google Font */
 .header .container .navigation li a:hover{
@@ -155,23 +159,75 @@ h1, h2, p{
   margin-top: 50px;
 }
 
-.container .content-sm{
+.parent .container .sm{
   background: none;
   float: left;
   margin-right: 11.7px;
   margin-left: 11.7px;
 }
 
+.parent .container .sm a{
+  text-decoration: none;
+  margin: 0;
+}
+
+.parent .container .sm h2:hover{
+  text-decoration: underline;
+  /* color: #002fff; */
+}
+
+/* .parent .container .sm h2{
+  
+} */
+
+.parent .container .sm p{
+  font-size: 18px;
+  color: #8d8d8d;
+}
+
+.container .product .details-product{
+  float: left;
+  margin-right: 50px;
+}
+
 .newsletter{
-  margin-top: 100px;
+  margin-top: 150px;
   height: 400px;
   background: #11103e;
   border-bottom: 0.1px solid #808080;
 }
 
+.newsletter h2{
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.newsletter p{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.newsletter .container div{
+  margin-top: 70px;
+}
+
+.newsletter .container .btn .btn-primary{
+  width: 400px;
+}
+
+.newsletter .container .btn{
+  text-align: center;
+}
+
 .site-footer{
   height: 180px;
   background: #11103e;
+}
+
+.site-footer .container div{
+  margin-top: 60px;
 }
 
 .site-footer .container p{
@@ -186,15 +242,34 @@ h1, h2, p{
   font-size: 20px;
   /* untuk mnghilangkan titik" */
   display: block;
+  margin-top: 15px;
 }
 
 .site-footer .container .footer-link li a{
   color: white;
   text-decoration: none;
   font-family: Gelasio;
+  
 }
 
 .site-footer .container .footer-link li a:hover{
   color: #5c7aff;
   text-decoration: underline;
+}
+
+.container .product{
+  margin-top: 50px;
+}
+
+.container .form input{
+  padding: 10px 60px;
+  font-size: 20px;
+}
+
+.container .form p{
+  font-size: 22px;
+}
+
+.container .form{
+  margin-top: 50px;
 }
